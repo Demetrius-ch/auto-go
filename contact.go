@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type contact struct {
 	name string
 	age int
@@ -12,4 +14,8 @@ func newcontact(name string, age int) contact {
 		phone: map[string]string{},
 	}
 	return c
+}
+func main() {
+	mynewcontact := newcontact("Chandler", 22)
+	fmt.Println(mynewcontact)
 }
